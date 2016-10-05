@@ -15,4 +15,4 @@ deploy:
   upload-dir: "${TRAVIS_BRANCH}/${TRAVIS_BUILD_NUMBER}"
   skip_cleanup: true
   on:
-    branch: **
+    branch: "**"
