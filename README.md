@@ -1,6 +1,7 @@
 # TravisCI勉強会
 
-[![Build Status](https://travis-ci.org/taka7646/travisci-workshop.svg?branch=master)](https://travis-ci.org/taka7646/travisci-workshop)
+master:[![Build Status](https://travis-ci.org/taka7646/travisci-workshop.svg?branch=master)](https://travis-ci.org/taka7646/travisci-workshop)
+develop:[![Build Status](https://travis-ci.org/taka7646/travisci-workshop.svg?branch=develop)](https://travis-ci.org/taka7646/travisci-workshop)
 
 ## ゴール
 
