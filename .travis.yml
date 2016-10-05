@@ -11,3 +11,4 @@ deploy:
   region: "ap-northeast-1"
   local-dir: css
   upload-dir: "${TRAVIS_BRANCH}/${TRAVIS_BUILD_NUMBER}"
+  skip_cleanup: true
