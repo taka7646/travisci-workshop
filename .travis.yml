@@ -1,6 +1,6 @@
 language: java
 script:
-  - java -jar ./bin/yuicompressor-2.4.8.jar '.css$:-min.css' ./css/*.css
+  - java -jar ./bin/yuicompressor-2.4.8.jar -o '.css$:-min.css' ./css/*.css
 notifications:
   slack: taka7646:ZgEkiHtDXjq5OfQlkOQl7gbb
 deploy:
