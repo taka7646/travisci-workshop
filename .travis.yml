@@ -1,6 +1,13 @@
 language: java
 script:
-  - java -jar ./bin/yuicompressor-2.4.8.jar ./css/a.css
-  - javac a.java
+  - java -jar ./bin/yuicompressor-2.4.8.jar '.css$:-min.css' *.css
 notifications:
   slack: taka7646:ZgEkiHtDXjq5OfQlkOQl7gbb
+deploy:
+  provider: s3
+  access_key_id: "${access_key_id}"
+  secret_access_key: "${secret_access_key}"
+  bucket: "yo-suzuki-travis-ci"
+  region: "ap-northeast-1"
+  local-dir: css
+  upload-dir: "${TRAVIS_BRANCH}/${TRAVIS_BUILD_NUMBER}"
