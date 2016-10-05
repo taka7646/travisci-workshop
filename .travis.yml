@@ -1,6 +1,8 @@
 language: java
 script:
   - java -jar ./bin/yuicompressor-2.4.8.jar -o '.css$:-min.css' ./css/*.css
+  - mkdir -p out
+  - mv css/*-min.css out/
 notifications:
   slack: taka7646:ZgEkiHtDXjq5OfQlkOQl7gbb
 deploy:
@@ -9,7 +11,6 @@ deploy:
   secret_access_key: "${secret_access_key}"
   bucket: "yo-suzuki-travis-ci"
   region: "ap-northeast-1"
-  local-dir: css
+  local-dir: out
   upload-dir: "${TRAVIS_BRANCH}/${TRAVIS_BUILD_NUMBER}"
   skip_cleanup: true
-  file: "*-min.css"
