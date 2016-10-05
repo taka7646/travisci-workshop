@@ -1,5 +1,7 @@
 # TravisCI勉強会
 
+[![Build Status](https://travis-ci.org/taka7646/travisci-workshop.svg?branch=master)](https://travis-ci.org/taka7646/travisci-workshop)
+
 ## ゴール
 
 以下の要件を満たすCI環境を構築してください。
